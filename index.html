@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Home</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/homepage.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  </head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="My Portfolio Logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Dark Mode Toggle Button -->
+      <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+        <span class="toggle-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero fade-in">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to My Portfolio</h1>
+        <p class="hero-subtitle">I create stunning, user-friendly websites that stand out.</p>
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Highlights -->
+  <section id="portfolio" class="portfolio-highlights fade-in">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>A modern website for a tech startup.</p>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>An e-commerce platform with a sleek design.</p>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills fade-in">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill">
+          <div class="skill-info">
+            <span class="skill-name">HTML</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="skill">
+          <div class="skill-info">
+            <span class="skill-name">CSS</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="skill">
+          <div class="skill-info">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="skill">
+          <div class="skill-info">
+            <span class="skill-name">React</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials fade-in">
+    <div class="container">
+      <h2 class="section-title">What My Clients Say</h2>
+      <div class="testimonials-carousel">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Working with [Your Name] was an absolute pleasure. Their attention to detail and creativity brought our vision to life!"</p>
+            <div class="testimonial-author">
+              <img src="images/client1.jpg" alt="Client 1">
+              <div class="author-info">
+                <h4>John Doe</h4>
+                <span>CEO, Tech Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"The website [Your Name] built for us exceeded our expectations. Highly recommend their services!"</p>
+            <div class="testimonial-author">
+              <img src="images/client2.jpg" alt="Client 2">
+              <div class="author-info">
+                <h4>Jane Smith</h4>
+                <span>Founder, Creative Agency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Professional, reliable, and talented. [Your Name] delivered a stunning website on time and within budget."</p>
+            <div class="testimonial-author">
+              <img src="images/client3.jpg" alt="Client 3">
+              <div class="author-info">
+                <h4>Michael Brown</h4>
+                <span>Manager, Global Enterprises</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Navigation -->
+      <div class="carousel-navigation">
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume fade-in">
+    <div class="container">
+      <h2 class="section-title">Download My Resume</h2>
+      <p class="resume-description">Feel free to download my resume to learn more about my skills, experience, and achievements.</p>
+      <a href="path/to/your-resume.pdf" class="btn btn-primary" download="Your-Name-Resume.pdf">
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>

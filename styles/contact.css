@@ -1,0 +1,41 @@
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    align-self: flex-start;
+  }
+
+  
+
+  /* Form Error Styling */
+.contact-form input.error,
+.contact-form textarea.error {
+  border-color: #ff4d4d;
+}
+
+.contact-form input.error::placeholder,
+.contact-form textarea.error::placeholder {
+  color: #ff4d4d;
+}
