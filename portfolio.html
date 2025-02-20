@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio - Contact</title>
+  <title>My Portfolio - Portfolio</title>
   <script>
     // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme');
@@ -12,11 +12,11 @@
     }
   </script>
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/contact.css">
-  <link rel="stylesheet" href="styles/testimonials.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/animations.css">
   <link rel="stylesheet" href="styles/homepage.css">
 </head>
-<body class="no-animate">
+<body>
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo">
@@ -37,17 +37,31 @@
       </button>
     </div>
   </header>
-
-  <!-- Contact Section -->
-  <section class="contact fade-in">
+  
+  <!-- Portfolio Section -->
+  <section class="portfolio fade-in">
     <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required aria-label="Your Name">
-        <input type="email" placeholder="Your Email" required aria-label="Your Email">
-        <textarea placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+      <h2 class="section-title">My Portfolio</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/tulip.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>A modern website for a tech startup.</p>
+          <a href="https://honeybee-code.github.io/main_tulips/" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="project-card">
+          <img src="images/law.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>An e-commerce platform with a sleek design.</p>
+          <a href="https://honeybee-code.github.io/law_firm/" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>A portfolio website for a creative professional.</p>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
     </div>
   </section>
 

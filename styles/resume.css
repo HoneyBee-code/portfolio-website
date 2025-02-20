@@ -1,0 +1,40 @@
+/* Resume Section */
+.resume {
+  padding: 80px 0;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.resume-description {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.resume .btn-primary {
+  font-size: 18px;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume .btn-primary:hover {
+  background-color: var(--btn-primary-bg-hover);
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .resume {
+    padding: 60px 0;
+  }
+
+  .resume-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .resume .btn-primary {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}

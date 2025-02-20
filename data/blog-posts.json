@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title": "10 Tips for Better Web Design",
+      "description": "Learn how to create stunning websites with these expert tips.",
+      "image": "images/blog1.jpg",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "Mastering CSS Grid",
+      "description": "A comprehensive guide to mastering CSS Grid for responsive layouts.",
+      "image": "images/blog2.jpg",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Best Practices",
+      "description": "Improve your JavaScript skills with these best practices.",
+      "image": "images/blog3.jpg",
+      "link": "#"
+    }
+  ]

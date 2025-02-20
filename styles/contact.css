@@ -1,3 +1,9 @@
+.no-animate .fade-in {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
 /* Contact Section */
 .contact {
     padding: 60px 0;

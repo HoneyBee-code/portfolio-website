@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio - About</title>
-  <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/testimonials.css">
   <link rel="stylesheet" href="styles/homepage.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo">
-        <img src="images/logo.svg" alt="My Portfolio Logo">
+        <img src="images/logo.jpg" alt="My Portfolio Logo">
       </a>
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -34,7 +43,7 @@
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+        <img src="images/tulip.jpg" alt="Profile Picture" class="profile-img">
         <div class="about-text">
           <h3>Hi, I'm [Your Name]</h3>
           <p>I'm a passionate web developer with expertise in creating modern, user-friendly websites. I specialize in front-end development, UI/UX design, and responsive web design.</p>

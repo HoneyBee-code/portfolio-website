@@ -1,0 +1,46 @@
+/* Portfolio Section */
+.portfolio {
+  padding: 60px 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+/* Project Card Hover Effects */
+.project-card h3 {
+  transition: color 0.3s ease;
+}
+
+.project-card p {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}

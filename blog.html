@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio - Contact</title>
+  <title>My Portfolio - Blog</title>
   <script>
     // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme');
@@ -12,7 +12,7 @@
     }
   </script>
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/blog.css">
   <link rel="stylesheet" href="styles/testimonials.css">
   <link rel="stylesheet" href="styles/homepage.css">
 </head>
@@ -38,16 +38,13 @@
     </div>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact fade-in">
+  <!-- Blog Section -->
+  <section class="blog fade-in">
     <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required aria-label="Your Name">
-        <input type="email" placeholder="Your Email" required aria-label="Your Email">
-        <textarea placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+      <h2 class="section-title">Blog</h2>
+      <div class="blog-grid" id="blog-grid">
+        <!-- Blog posts will be dynamically loaded here -->
+      </div>
     </div>
   </section>
 

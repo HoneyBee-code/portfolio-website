@@ -4,21 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio - Home</title>
-  <link rel="stylesheet" href="styles/base.css">
+  <script>
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/homepage.css">
   <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/skills.css">
+  <link rel="stylesheet" href="styles/testimonials.css">
+  <link rel="stylesheet" href="styles/resume.css">
   </head>
 <body>
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo">
-        <img src="images/logo.svg" alt="My Portfolio Logo">
+        <img src="images/logo.jpg" alt="My Portfolio Logo">
       </a>
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -46,16 +57,16 @@
       <h2 class="section-title">Featured Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 1">
+          <img src="images/tulip.jpg" alt="Project 1">
           <h3>Project 1</h3>
           <p>A modern website for a tech startup.</p>
-          <a href="#" class="btn btn-secondary">Learn More</a>
+          <a href="https://honeybee-code.github.io/main_tulips/" class="btn btn-secondary">Learn More</a>
         </div>
         <div class="project-card">
-          <img src="images/project2.jpg" alt="Project 2">
+          <img src="images/law.jpg" alt="Project 2">
           <h3>Project 2</h3>
           <p>An e-commerce platform with a sleek design.</p>
-          <a href="#" class="btn btn-secondary">Learn More</a>
+          <a href="https://honeybee-code.github.io/law_firm/" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
     </div>
@@ -120,7 +131,7 @@
           <div class="testimonial-content">
             <p>"Working with [Your Name] was an absolute pleasure. Their attention to detail and creativity brought our vision to life!"</p>
             <div class="testimonial-author">
-              <img src="images/client1.jpg" alt="Client 1">
+              <img src="images/tulip.jpg" alt="Client 1">
               <div class="author-info">
                 <h4>John Doe</h4>
                 <span>CEO, Tech Solutions</span>
